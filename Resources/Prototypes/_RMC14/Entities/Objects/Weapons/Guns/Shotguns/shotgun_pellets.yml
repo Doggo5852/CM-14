@@ -25,7 +25,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 65
+        Piercing: 50
   - type: CMArmorPiercing
     amount: 5
   - type: ProjectileSpread
@@ -44,6 +44,8 @@
     - range: 4
       falloff: 10
   - type: RMCStunOnHit
+  stunTime: 0.8
+
 
 - type: entity
   parent: CMPelletShotgunBase
