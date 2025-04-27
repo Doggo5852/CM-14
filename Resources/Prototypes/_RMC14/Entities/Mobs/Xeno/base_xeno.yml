@@ -472,7 +472,7 @@
     canResistFire: true
     damage: #per second, scales with number of fire 'stacks'
       types:
-        Heat: 1
+        Heat: 0.5
 
 - type: entity
   abstract: true

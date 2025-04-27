@@ -116,7 +116,7 @@
     - ActionXenoResinWalker
     - ActionXenoDevolve
   - type: XenoConstruction
-    buildDelay: 1
+    buildDelay: 0.8
     canBuild:
     - WallXenoResinThick
     - WallXenoMembraneThick
@@ -130,9 +130,9 @@
     - HiveRecoveryNodeXenoConstructionNode
     canUpgrade: true
   - type: XenoPlasma
-    plasma: 1000
-    maxPlasma: 1000
-    plasmaRegenOnWeeds: 5.5
+    plasma: 1500
+    maxPlasma: 1500
+    plasmaRegenOnWeeds: 10
     plasmaTransferDelay: 0.5
   - type: AcidTrap
   - type: XenoEvolution

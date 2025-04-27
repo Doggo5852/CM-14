@@ -46,9 +46,9 @@
   - type: XenoPheromones
     pheromonesMultiplier: 2
   - type: XenoPlasma
-    plasma: 1000
-    maxPlasma: 1000
-    plasmaRegenOnWeeds: 4.5
+    plasma: 1200
+    maxPlasma: 1200
+    plasmaRegenOnWeeds: 7
   - type: Tackle
     max: 4
     stunMin: 3
