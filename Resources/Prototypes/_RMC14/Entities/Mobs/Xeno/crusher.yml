@@ -22,8 +22,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      700: Critical
-      800: Dead
+      725: Critical
+      1200: Dead
   - type: Xeno
     role: CMXenoCrusher
     actionIds:
@@ -48,18 +48,18 @@
   - type: XenoStomp
     damage:
       types:
-        Blunt: 65
+        Blunt: 70
     selfEffect: CMEffectSelfStomp
   - type: XenoCharge
     damage:
       types:
-        Blunt: 60
+        Blunt: 70
         Structural: 750
   - type: XenoAnimateMovement
   - type: XenoPlasma
-    plasma: 400
-    maxPlasma: 400
-    plasmaRegenOnWeeds: 4
+    plasma: 600
+    maxPlasma: 600
+    plasmaRegenOnWeeds: 2
   - type: CMArmor
     xenoArmor: 30
     explosionArmor: 100
@@ -68,11 +68,11 @@
   - type: MeleeWeapon
     damage:
       groups:
-        Brute: 40
+        Brute: 45
   - type: XenoTailStab
     tailDamage:
       groups:
-        Brute: 48
+        Brute: 55
   - type: CrusherShield
   - type: XenoShield
   - type: XenoMeleeSlow

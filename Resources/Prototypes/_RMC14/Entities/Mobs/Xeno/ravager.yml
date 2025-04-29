@@ -39,7 +39,9 @@
     hudOffset: 0,0.1
     unlockAt: 900 # 15 minutes
   - type: XenoRegen
-    standHealingMultiplier: 0.66
+    critHealMultiplier: 0.3465  # 5% increased regeneration
+    standHealingMultiplier: 0.75
+    restHealMultiplier: 1.50
   - type: XenoHeavy
   - type: XenoDevolve
     devolvesTo:

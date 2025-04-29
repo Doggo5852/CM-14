@@ -41,8 +41,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      650: Critical
-      750: Dead
+      600: Critical
+      850: Dead
   - type: Xeno
     role: CMXenoBoiler
     actionIds:
@@ -65,9 +65,9 @@
     devolvesTo:
     - CMXenoSpitter
   - type: XenoPlasma
-    plasma: 400
-    maxPlasma: 400
-    plasmaRegenOnWeeds: 7
+    plasma: 600
+    maxPlasma: 600
+    plasmaRegenOnWeeds: 6
   - type: XenoAcid
   - type: CMArmor
     xenoArmor: 20
@@ -102,8 +102,8 @@
     stunMin: 3
     stunMax: 4
   - type: MovementSpeedModifier
-    baseWalkSpeed: 2
-    baseSprintSpeed: 3.5
+    baseWalkSpeed: 2.5
+    baseSprintSpeed: 4.5
   - type: SlowOnPull
     slowdowns:
     - multiplier: 0.6375

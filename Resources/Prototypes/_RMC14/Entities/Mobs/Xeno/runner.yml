@@ -28,7 +28,7 @@
     hudOffset: -0.15,0.6
     unlockAt: 300 # 5 minutes
   - type: XenoRegen
-    restHealMultiplier:  1.75
+    restHealMultiplier:  3.75
   - type: Fixtures
     fixtures:
       fix1:
@@ -58,9 +58,9 @@
   - type: XenoDevour
   - type: XenoHide
   - type: XenoPlasma
-    plasma: 0
-    maxPlasma: 0
-    plasmaRegenOnWeeds: 0
+    plasma: 250
+    maxPlasma: 250
+    plasmaRegenOnWeeds: 4
   - type: CMArmor
     explosionArmor: 10
   - type: XenoEvolution
@@ -123,8 +123,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      230: Critical
-      330: Dead
+      190: Critical
+      350: Dead
   - type: Xeno
     actionIds:
     - ActionXenoRest
@@ -136,10 +136,13 @@
     - ActionXenoBoneChips
     - ActionXenoZoom
     - ActionXenoDevolve
+    - ActionXenoPlantWeeds
+    - ActionXenoChooseStructure
+    - ActionXenoSecreteStructure
   - type: XenoBoneChips
   - type: XenoLeap
     delay: 0
-    knockdownTime: 2
+    knockdownTime: 3
     leapSound: /Audio/_RMC14/Xeno/alien_pounce.ogg
   - type: MovementSpeedModifier
     baseWalkSpeed: 5.55

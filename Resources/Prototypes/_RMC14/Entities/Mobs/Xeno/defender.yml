@@ -23,8 +23,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      500: Critical
-      600: Dead
+      700: Critical
+      800: Dead
   - type: Xeno
     role: CMXenoDefender
     tier: 1
@@ -63,11 +63,11 @@
   - type: MeleeWeapon
     damage:
       groups:
-        Brute: 27.5
+        Brute: 35.5
   - type: XenoTailStab
     tailDamage:
       groups:
-        Brute: 36
+        Brute: 48
   - type: Tackle
     max: 4
   - type: Fixtures

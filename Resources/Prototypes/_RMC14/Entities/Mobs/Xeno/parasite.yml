@@ -67,7 +67,7 @@
   - type: DamageOffWeeds
     damage:
       types:
-        Blunt: 0.5
+        Blunt: 0.2
   - type: SoundOnDeath
     sound:
       path: /Audio/_RMC14/Xeno/alien_parasite_dies.ogg

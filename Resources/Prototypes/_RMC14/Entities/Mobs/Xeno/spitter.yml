@@ -46,9 +46,9 @@
   - type: XenoAcid
   - type: XenoDevour
   - type: XenoPlasma
-    plasma: 600
-    maxPlasma: 600
-    plasmaRegenOnWeeds: 4
+    plasma: 650
+    maxPlasma: 650
+    plasmaRegenOnWeeds: 4.2
   - type: XenoEvolution
     max: 500
     evolvesTo:

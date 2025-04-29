@@ -48,7 +48,7 @@
   - type: XenoPlasma
     plasma: 1200
     maxPlasma: 1200
-    plasmaRegenOnWeeds: 7
+    plasmaRegenOnWeeds: 9
   - type: Tackle
     max: 4
     stunMin: 3
@@ -61,7 +61,7 @@
       - XenoFruit
   - type: TunnelRenamer
   - type: EggPlantTime
-    plantTime: 2.5
+    plantTime: 1
   - type: MultiHandedHolder
     items:
     - hands: 2
@@ -75,7 +75,7 @@
       sprite: _RMC14/Interface/map_blips.rsi
       state: drone
   - type: XenoConstruction
-    buildDelay: 2
+    buildDelay: 1
     canOrderConstruction:
     - HiveCoreXenoConstructionNode
     - HiveEggMorpherXenoConstructionNode
@@ -255,7 +255,7 @@
   - type: XenoPlasma
     plasma: 1000
     maxPlasma: 1000
-    plasmaRegenOnWeeds: 4.5
+    plasmaRegenOnWeeds: 7.5
     plasmaTransferDelay: 1.5
   - type: MeleeWeapon
     damage:
@@ -268,6 +268,10 @@
   - type: XenoPheromones
     pheromonesMultiplier: 3
     pheroSuffix: strong
+  - type: XenoRegen
+    critHealMultiplier: 0.3465  # 5% increased regeneration
+    standHealingMultiplier: 0.60
+    restHealMultiplier: 2.50
   - type: XenoStrain
     name: rmc-xeno-healer-name
     description: rmc-xeno-healer-description
