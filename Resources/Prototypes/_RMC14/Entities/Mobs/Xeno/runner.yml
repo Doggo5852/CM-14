@@ -140,6 +140,13 @@
     - ActionXenoChooseStructure
     - ActionXenoSecreteStructure
   - type: XenoBoneChips
+  - type: XenoConstruction
+    canBuild:
+    - WallXenoResin
+    - WallXenoMembrane
+    - DoorXenoResin
+    - XenoStickyResin
+    - XenoFastResin
   - type: XenoLeap
     delay: 0
     knockdownTime: 3

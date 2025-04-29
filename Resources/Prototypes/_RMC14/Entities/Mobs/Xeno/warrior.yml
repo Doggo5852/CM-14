@@ -22,7 +22,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      750: Critical
+      700: Critical
       950: Dead
   - type: Xeno
     role: CMXenoWarrior
@@ -42,7 +42,14 @@
     hudOffset: -0.15,0.25
     unlockAt: 540 # 9 minutes
   - type: XenoRegen
-    restHealMultiplier:  2.1
+    restHealMultiplier:  1.2
+  - type: XenoConstruction
+    canBuild:
+    - WallXenoResin
+    - WallXenoMembrane
+    - DoorXenoResin
+    - XenoStickyResin
+    - XenoFastResin
   - type: XenoLight
   - type: XenoDevolve
     devolvesTo:
@@ -57,7 +64,7 @@
   - type: XenoPlasma
     plasma: 550
     maxPlasma: 550
-    plasmaRegenOnWeeds: 2.2
+    plasmaRegenOnWeeds: 1.8
   - type: XenoEvolution
     max: 500
     evolvesTo:
