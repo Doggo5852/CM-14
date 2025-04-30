@@ -142,13 +142,13 @@ public sealed partial class CMDistressSignalRuleComponent : Component
     public TimeSpan? EndAtAllClear;
 
     [DataField]
-    public TimeSpan AllClearEndDelay = TimeSpan.FromMinutes(3);
+    public TimeSpan AllClearEndDelay = TimeSpan.FromMinutes(30);
 
     [DataField]
     public ProtoId<RadioChannelPrototype> AllClearChannel = "MarineCommand";
 
     [DataField]
-    public TimeSpan RoundEndCheckDelay = TimeSpan.FromMinutes(1);
+    public TimeSpan RoundEndCheckDelay = TimeSpan.FromMinutes(400);
 
     [DataField]
     public ResPath Thunderdome = new("/Maps/_RMC14/thunderdome.yml");
