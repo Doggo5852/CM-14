@@ -28,7 +28,7 @@
     hudOffset: -0.15,0.6
     unlockAt: 300 # 5 minutes
   - type: XenoRegen
-    restHealMultiplier:  3.75
+    restHealMultiplier:  3.25
   - type: Fixtures
     fixtures:
       fix1:
@@ -58,9 +58,9 @@
   - type: XenoDevour
   - type: XenoHide
   - type: XenoPlasma
-    plasma: 250
-    maxPlasma: 250
-    plasmaRegenOnWeeds: 4
+    plasma: 350
+    maxPlasma: 350
+    plasmaRegenOnWeeds: 6.5
   - type: CMArmor
     explosionArmor: 10
   - type: XenoEvolution
@@ -141,6 +141,7 @@
     - ActionXenoSecreteStructure
   - type: XenoBoneChips
   - type: XenoConstruction
+    buildDelay: 0.8
     canBuild:
     - WallXenoResin
     - WallXenoMembrane
@@ -149,7 +150,7 @@
     - XenoFastResin
   - type: XenoLeap
     delay: 0
-    knockdownTime: 3
+    knockdownTime: 2.5
     leapSound: /Audio/_RMC14/Xeno/alien_pounce.ogg
   - type: MovementSpeedModifier
     baseWalkSpeed: 5.55

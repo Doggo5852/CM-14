@@ -75,7 +75,7 @@
       sprite: _RMC14/Interface/map_blips.rsi
       state: drone
   - type: XenoConstruction
-    buildDelay: 1
+    buildDelay: 0.5
     canOrderConstruction:
     - HiveCoreXenoConstructionNode
     - HiveEggMorpherXenoConstructionNode
