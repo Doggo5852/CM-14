@@ -22,7 +22,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      700: Critical
+      675: Critical
       950: Dead
   - type: Xeno
     role: CMXenoWarrior
@@ -42,7 +42,7 @@
     hudOffset: -0.15,0.25
     unlockAt: 540 # 9 minutes
   - type: XenoRegen
-    restHealMultiplier:  1.2
+    restHealMultiplier:  1.3
   - type: XenoConstruction
     canBuild:
     - WallXenoResin
