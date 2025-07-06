@@ -20,7 +20,7 @@ public sealed partial class NPCSteeringComponent : Component
     /// Used to override seeking behavior for context steering.
     /// </summary>
     [ViewVariables]
-    public bool CanSeek = true;
+    public bool CanSeek = false;
 
     /// <summary>
     /// Radius for collision avoidance.

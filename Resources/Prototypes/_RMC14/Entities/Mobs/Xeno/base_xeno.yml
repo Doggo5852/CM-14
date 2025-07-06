@@ -4,7 +4,7 @@
   branches:
   - tasks:
     - !type:HTNCompoundTask
-      task: CMXenoMeleeCombatCompound
+      task: MeleeCombatCompound
   - tasks:
     - !type:HTNCompoundTask
       task: IdleCompound
@@ -419,11 +419,23 @@
   id: CMXenoAI
   parent: CMXenoBase
   abstract: true
-#  components:
-#  - type: HTN # TODO RMC14 needs to not target nested marines
-#    rootTask:
-#      task: CMXenoCompound
-
+  components:
+  - type: HTN # TODO RMC14 needs to not target nested marines
+    rootTask:
+      task: XenoCompound
+    blackboard:
+      VisionRadius: !type:Single
+        8
+      AggroVisionRadius: !type:Single
+        10
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
 - type: entity
   id: CMXenoDeveloped
   parent:

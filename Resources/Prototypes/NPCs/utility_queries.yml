@@ -96,8 +96,7 @@
         preset: TargetHealth
     - !type:TargetAccessibleCon
       curve: !type:BoolCurve
-    - !type:TargetInLOSOrCurrentCon
-      curve: !type:BoolCurve
+    
 
 - type: utilityQuery
   id: OrderedTargets

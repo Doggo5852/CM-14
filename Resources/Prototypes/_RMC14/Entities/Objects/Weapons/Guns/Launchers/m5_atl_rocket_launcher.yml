@@ -130,7 +130,7 @@
     impactEffect: BulletImpactEffect
     damage:
       types:
-        Blunt: 15
+        Blunt: 60
     maxFixedRange: 6 # 7 tiles
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/m5spec_projectiles.rsi
@@ -187,8 +187,8 @@
     impactEffect: BulletImpactEffect
     damage:
       types:
-        Blunt: 160
-        Heat: 150
+        Blunt: 760
+        Heat: 250
         # 10 brute damage + 150 brute and 150 burn to simulate direct explosive damage.
         # Temporary mechanic to make it consistent with intended main target damage.
     maxFixedRange: 5 # 6 tiles

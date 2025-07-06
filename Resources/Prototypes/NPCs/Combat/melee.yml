@@ -36,19 +36,7 @@
         - !type:HTNCompoundTask
           task: EscapeCompound
 
-    # Pickup weapon if we don't have one.
-    - preconditions:
-        - !type:ActiveHandComponentPrecondition
-            components:
-              # Just serializer things
-              - type: MeleeWeapon
-                damage:
-                  types:
-                    Blunt: 0
-            invert: true
-      tasks:
-        - !type:HTNCompoundTask
-          task: PickupMeleeCompound
+    
 
     # Melee combat (unarmed or otherwise)
     - tasks:

@@ -127,7 +127,7 @@
   - type: Explosive
     explosionType: RMCMortar
     maxIntensity: 30.1 # max 150 brute, 150 burn
-    intensitySlope: 5
+    intensitySlope: 4
     totalIntensity: 800
     canCreateVacuum: false
   - type: CMExplosionEffect
@@ -155,7 +155,7 @@
   - type: MortarShell
   - type: TileFireOnTrigger
     spawn: RMCTileFireGreen
-    range: 5
+    range: 8
 
 - type: entity
   parent: RMCMortarShellBase
