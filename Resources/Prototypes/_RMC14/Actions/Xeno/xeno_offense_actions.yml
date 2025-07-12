@@ -444,7 +444,7 @@
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: fling
     event: !type:XenoFlingActionEvent
-    range: 1.5
+    range: 2
     useDelay: 7
     deselectOnMiss: false
   - type: XenoOffensiveAction

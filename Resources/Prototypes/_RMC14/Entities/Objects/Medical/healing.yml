@@ -173,7 +173,7 @@
     consumable: false
     scalingDoAfter: 0.25
     damage: -10
-    canUseUnskilled: false
+    canUseUnskilled: true
     skills:
       RMCSkillMedical: 2
     treatBeginSound:
@@ -217,7 +217,7 @@
     consumable: false
     scalingDoAfter: 0.25
     damage: -10
-    canUseUnskilled: false
+    canUseUnskilled: true
     skills:
       RMCSkillMedical: 2
     treatBeginSound:

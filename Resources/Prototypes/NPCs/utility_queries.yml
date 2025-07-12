@@ -113,8 +113,7 @@
         preset: TargetHealth
     - !type:TargetAccessibleCon
       curve: !type:BoolCurve
-    - !type:TargetInLOSOrCurrentCon
-      curve: !type:BoolCurve
+    
     # they gotta be what we ordered
     - !type:OrderedTargetCon
       curve: !type:BoolCurve

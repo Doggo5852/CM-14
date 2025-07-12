@@ -10,7 +10,7 @@ namespace Content.Server.NPC.Systems;
 
 public sealed partial class NPCCombatSystem
 {
-    private const float TargetMeleeLostRange = 14f;
+    private const float TargetMeleeLostRange = 30f;
 
     private void InitializeMelee()
     {

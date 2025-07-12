@@ -43,7 +43,7 @@ public sealed partial class NPCSteeringComponent : Component
     /// Set to true from other systems if you wish to force the NPC to move closer.
     /// </summary>
     [DataField("forceMove")]
-    public bool ForceMove = false;
+    public bool ForceMove = true;
 
     [DataField("lastSteerDirection")]
     public Vector2 LastSteerDirection = Vector2.Zero;

@@ -9,18 +9,30 @@
   - type: CombatMode
   - type: InputMover
   - type: MobMover
+  - type: GiveHands
+    hands:
+    - name: Right Hand
+      location: Right
+    - name: Left Hand
+      location: Left
+  - type: ContentEye
+    targetZoom: "2, 2"
+    maxZoom: "2, 2"
+  - type: RMCSize
+    size: Xeno
   - type: HTN
     rootTask:
       task: XenoCompound
     blackboard:
       VisionRadius: !type:Single
-        28
+        25
       AggroVisionRadius: !type:Single
-        28
+        25
+      IdleRange: !type:Single
+        15
       NavClimb: !type:Bool
         true
-      NavInteract: !type:Bool
-        true
+      
       NavPry: !type:Bool
         true
       NavSmash: !type:Bool
@@ -131,7 +143,7 @@
     allowed:
     - Stun
     - KnockedDown
-
+# ActionXenoFling
 - type: entity
   name: praetorian
   parent: MobXeno
@@ -144,12 +156,18 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: running
+  - type: XenoFling
+  - type: NPCUseActionOnTarget
+    actionId: ActionXenoFling
   - type: MobThresholds
     thresholds:
       0: Alive
-      850: Dead
+      600: Dead
   - type: Stamina
     critThreshold: 300
+  - type: CMArmor
+    xenoArmor: 25
+    explosionArmor: 40
   - type: MeleeWeapon
     damage:
       groups:
@@ -160,7 +178,6 @@
       180: 0.9
       300: 0.8
       500: 0.5
-      680: 0.4
   - type: Fixtures
     fixtures:
       fix1:
@@ -228,7 +245,10 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      2200: Dead
+      2000: Dead
+  - type: CMArmor
+    xenoArmor: 25
+    explosionArmor: 100
   - type: MovementSpeedModifier
     baseSprintSpeed: 5
   - type: SlowOnDamage
@@ -271,20 +291,20 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      1600: Dead
+      1200: Dead
   - type: MovementSpeedModifier
-    baseSprintSpeed: 5
+    baseSprintSpeed: 4.5
+  - type: CMArmor
+    xenoArmor: 25
+    explosionArmor: 80
   - type: MeleeWeapon
     damage:
      groups:
        Brute: 30
   - type: SlowOnDamage
     speedModifierThresholds:
-      250: 0.95
-      350: 0.85
-      570: 0.8
-      1200: 0.65
-      1400: 0.55
+      350: 0.9
+      570: 0.6
   - type: Fixtures
     fixtures:
       fix1:
