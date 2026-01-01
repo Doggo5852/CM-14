@@ -42,7 +42,7 @@
     - !type:HTNPrimitiveTask
       operator: !type:SetFloatOperator
         targetKey: IdleTime
-        amount: 5
+        amount: 2
 
     - !type:HTNPrimitiveTask
       preconditions:

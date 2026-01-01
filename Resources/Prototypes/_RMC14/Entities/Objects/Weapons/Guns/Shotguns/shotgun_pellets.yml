@@ -44,7 +44,7 @@
     - range: 4
       falloff: 10
   - type: RMCStunOnHit
-  stunTime: 0.8
+  stunTime: 0.3
 
 
 - type: entity
@@ -72,9 +72,9 @@
     amount: 20
   - type: RMCStunOnHit
     maxRange: 6.5
-    stunTime: 1
-    superSlowTime: 2
-    slowTime: 6
+    stunTime: 0.1
+    superSlowTime: 0.5
+    slowTime: 3
   - type: RMCProjectileAccuracy
     accuracy: 100
     thresholds:

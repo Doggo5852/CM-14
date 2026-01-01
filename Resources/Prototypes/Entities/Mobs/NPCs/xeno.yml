@@ -8,13 +8,11 @@
   - type: Insulated
   - type: CombatMode
   - type: InputMover
+  - type: Xeno
+    role: CMXenoBurrower
+  - type: CMArmor
+  - type: RMCArmorModifier
   - type: MobMover
-  - type: GiveHands
-    hands:
-    - name: Right Hand
-      location: Right
-    - name: Left Hand
-      location: Left
   - type: ContentEye
     targetZoom: "2, 2"
     maxZoom: "2, 2"
@@ -40,7 +38,7 @@
   - type: Prying
     pryPowered: true
     force: true
-    speedModifier: 1.5
+    speedModifier: 1.7
     useSound:
       path: /Audio/Items/crowbar.ogg
   - type: Reactive
@@ -156,13 +154,12 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: running
-  - type: XenoFling
-  - type: NPCUseActionOnTarget
-    actionId: ActionXenoFling
   - type: MobThresholds
     thresholds:
       0: Alive
       600: Dead
+  - type: Xeno
+    role: CMXenoPraetorian
   - type: Stamina
     critThreshold: 300
   - type: CMArmor
@@ -202,10 +199,12 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: running
+  - type: Xeno
+    role: CMXenoDrone
   - type: MobThresholds
     thresholds:
       0: Alive
-      210: Dead
+      300: Dead
   - type: SlowOnDamage
     speedModifierThresholds:
       40: 0.9
@@ -215,7 +214,7 @@
   - type: MeleeWeapon
     damage:
       groups:
-        Brute: 12
+        Brute: 17
   - type: MovementSpeedModifier
     baseSprintSpeed: 4.2
   - type: Fixtures
@@ -242,15 +241,20 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: running
+  - type: Xeno
+    role: CMXenoQueen
+  - type: RMCSize
+    size: Immobile
+  - type: XenoHeavy
   - type: MobThresholds
     thresholds:
       0: Alive
-      2000: Dead
+      1500: Dead
   - type: CMArmor
     xenoArmor: 25
     explosionArmor: 100
   - type: MovementSpeedModifier
-    baseSprintSpeed: 5
+    baseSprintSpeed: 4.5
   - type: SlowOnDamage
     speedModifierThresholds:
       500: 0.9
@@ -288,19 +292,24 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: running
+  - type: Xeno
+    role: CMXenoRavager
+  - type: XenoHeavy
+  - type: RMCSize
+    size: Immobile
   - type: MobThresholds
     thresholds:
       0: Alive
-      1200: Dead
+      1000: Dead
   - type: MovementSpeedModifier
     baseSprintSpeed: 4.5
   - type: CMArmor
-    xenoArmor: 25
+    xenoArmor: 35
     explosionArmor: 80
   - type: MeleeWeapon
     damage:
      groups:
-       Brute: 30
+       Brute: 37
   - type: SlowOnDamage
     speedModifierThresholds:
       350: 0.9
@@ -331,6 +340,8 @@
       state: running
   - type: MovementSpeedModifier
     baseSprintSpeed: 9.0
+  - type: Xeno
+    role: CMXenoRunner
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -389,13 +400,57 @@
     rootTask:
       task: SimpleRangedHostileCompound
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 0.75
-  - type: BasicEntityAmmoProvider
-    proto: BulletAcid
+    rechargeCooldown: 5
+  - type: BasicEntityAmmoProvider #BulletAcid
+    proto: XenoChargedSpitProjectile
     capacity: 1
     count: 1
   - type: Gun
     fireRate: 0.75
+    projectileSpeed: 15
+    useKey: false
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 235
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+
+- type: entity
+  name: boiler
+  parent: MobXeno
+  id: MobXenoSpitterBoiler
+  components:
+  - type: Sprite
+    sprite: Mobs/Aliens/Xenos/boiler.rsi
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      700: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      100: 0.9
+  - type: HTN
+    rootTask:
+      task: SimpleRangedHostileCompound
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 19
+  - type: BasicEntityAmmoProvider #BulletAcid
+    proto: XenoBombardAcidProjectile
+    capacity: 1
+    count: 1
+  - type: Gun
+    fireRate: 0.75
+    projectileSpeed: 6
     useKey: false
     selectedMode: FullAuto
     availableModes:

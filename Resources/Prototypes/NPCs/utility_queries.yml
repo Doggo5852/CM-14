@@ -231,6 +231,6 @@
 - type: utilityCurvePreset
   id: TargetHealth
   curve: !type:QuadraticCurve
-    slope: 1.0
-    exponent: 0.4
+    slope: 0.05
+    exponent: 0.1
     xOffset: -0.02
